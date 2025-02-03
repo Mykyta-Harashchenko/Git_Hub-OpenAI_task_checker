@@ -1,3 +1,22 @@
+Description:
+GitHub OpenAI Task Checker is a tool for automated task verification on GitHub using OpenAI's capabilities. The project is designed to analyze code, check its compliance with given requirements, and identify potential errors while providing improvement suggestions.
+
+Key Features:
+
+Automated code review for GitHub repositories
+Task compliance analysis
+AI-powered feedback and recommendations
+Integration with CI/CD pipelines
+Technologies:
+
+Python
+GitHub API
+OpenAI API
+Automated code analysis scripts
+Project Goal:
+To provide a convenient tool for verifying developer tasks, reducing the workload of code reviewers, and improving code quality in educational and professional environments.
+
+
 Step-by-Step Instructions to Start This Project Locally
 
 Clone the Repository
@@ -54,10 +73,3 @@ Use tools like Postman or curl to test the endpoints.
 Alternatively, you can explore the automatically generated Swagger UI at:
 http://127.0.0.1:8000/docs
 
-How can I make the perfomance of the project much faster
-I can optimize handling larger repositories and a higher volume of requests by introducing asynchronous processing with task queues like 
-Celery or RQ, backed by a robust Redis setup for task queuing and caching. For caching, Redis can be used to store intermediate results, 
-such as repository metadata or preprocessed file contents, to minimize redundant API calls. Switch to a scalable database like PostgreSQL 
-to store repository analysis results and user-specific data for efficient retrieval. Additionally, implement rate limiting and batching for 
-GitHub API calls to handle larger repositories more effectively, and use paginated API requests. To further enhance scalability, deploy the 
-application using Docker and Kubernetes, enabling horizontal scaling to manage increased workloads efficiently.
